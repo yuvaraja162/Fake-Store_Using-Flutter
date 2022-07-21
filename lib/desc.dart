@@ -18,18 +18,6 @@ class _descState extends State<desc> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
     _controller = AnimationController(vsync: this);
-
-    // Future.delayed(Duration.zero, () {
-    //   if (ModalRoute.of(context)?.settings.arguments != null) {
-    //     final Map arguments = ModalRoute.of(context)?.settings.arguments as Map;
-
-    //     setState(() {
-    //       model = arguments['data'];
-    //       title = model!.title.toString();
-    //       print(title);
-    //     });
-    //   }
-    // });
   }
 
   @override
@@ -145,12 +133,6 @@ class _descState extends State<desc> with SingleTickerProviderStateMixin {
               ),
               // alignment: Alignment.bottomRight,
             ),
-
-            // BottomNavigationBar(
-            //     type: BottomNavigationBarType.fixed,
-            //     items: <BottomNavigationBarItem>[
-            //       // ElevatedButton(onPressed: () {}, child: Text("Add To Cart")),
-            //     ])
           ],
         ),
       ),

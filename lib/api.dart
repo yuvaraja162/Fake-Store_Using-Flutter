@@ -8,8 +8,8 @@ class Api {
   static var client = http.Client();
   static Future<List<Model>?> getproducts() async {
     Map<String, String> requestHeaders = {'Content-Type': 'application/json'};
-    //var url = Uri.http(config.URL, config.Product_URl);
-    var url = Uri.http('fakestoreapi.com', '/products');
+
+    var url = Uri.http(config.URL, config.Product_URl);
 
     var response = await client.get(url, headers: requestHeaders);
     print(response.statusCode);

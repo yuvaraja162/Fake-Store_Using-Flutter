@@ -47,27 +47,6 @@ class _HomePageState extends State<HomePage>
       body: SingleChildScrollView(
           child: Column(
         children: [
-          // Container(
-          //   child: ListView.builder(
-          //     itemCount: 4,
-          //     itemBuilder: (context, index) {
-          //       return InkWell(
-          //         onTap: () {},
-          //         child: Column(children: [
-          //           Container(
-          //             height: 20,
-          //             child:
-          //                 //Text(data[index].category.toString()),
-          //                 Text("aaf"),
-          //             decoration: BoxDecoration(
-          //               borderRadius: BorderRadius.circular(10),
-          //             ),
-          //           ),
-          //         ]),
-          //       );
-          //     },
-          //   ),
-          // ),
           FutureBuilder(
               future: Api.getproducts(),
               builder: (BuildContext context, AsyncSnapshot snapshot) {
